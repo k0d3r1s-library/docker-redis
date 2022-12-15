@@ -4,7 +4,7 @@ USER root
 
 ENV REDIS_VERSION master
 
-COPY ./source/ /usr/src/redis 
+COPY ./redis/ /usr/src/redis 
 COPY docker-entrypoint.sh /usr/local/bin/
 
 RUN \
